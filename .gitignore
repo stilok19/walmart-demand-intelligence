@@ -216,3 +216,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Raw data lives in GCS not Git
+data/*.csv
+data/*.zip
+data/*.gz
+
+# GCP credentials
+*.json
+service-account-key.json
+kaggle.json
+
+# Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.env
+
+# dbt
+walmart_dbt/target/
+walmart_dbt/logs/
+walmart_dbt/.user.yml
