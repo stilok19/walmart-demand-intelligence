@@ -55,7 +55,7 @@ FROM unpivoted;
 """
 
 # Save SQL to file
-output_path = "ingestion/stg_sales_unpivot.sql"
+output_path = "walmart_dbt/models/staging/stg_sales_unpivot.sql"
 with open(output_path, "w") as f:
     f.write(sql)
 
