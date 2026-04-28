@@ -38,6 +38,9 @@ SELECT
     day_id,
     sales,
 
+    -- Parse day number for sales feature (lag, order by)
+    CAST(SPLIT(day_id, '_')[OFFSET(1)] AS INT64)    AS day_num,
+
     -- Item hierarchy
     cat_id                                          AS category,
     SPLIT(dept_id, '_')[OFFSET(1)]                  AS department,
