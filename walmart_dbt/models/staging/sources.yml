@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: walmart_raw
+    database: walmart-demand-intelligence
+    schema: walmart_forecasting
+    tables:
+      - name: raw_calendar
+      - name: raw_sales_train
+      - name: raw_sell_prices
+  
+  - name: walmart_staging
+    database: walmart-demand-intelligence
+    schema: walmart_forecasting
+    tables:
+      - name: stg_sales      ← created by Python script
