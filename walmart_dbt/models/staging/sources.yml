@@ -8,9 +8,3 @@ sources:
       - name: raw_calendar
       - name: raw_sales_train
       - name: raw_sell_prices
-  
-  - name: walmart_staging
-    database: walmart-demand-intelligence
-    schema: walmart_forecasting
-    tables:
-      - name: stg_sales      ← created by Python script
