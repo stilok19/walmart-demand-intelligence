@@ -8,3 +8,4 @@ sources:
       - name: raw_calendar
       - name: raw_sales_train
       - name: raw_sell_prices
+      - name: raw_sales_train_unpivot
